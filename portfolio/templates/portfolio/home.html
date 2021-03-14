@@ -1,18 +1,18 @@
 {% extends 'portfolio/base.html'  %}
 {%  block content %}
-
+<link rel="stylesheet" href=" style.css ">
  <h1>Eivis portfolio </h1>
-<h2>{{  blog.date|date:'M d Y'|upper }}</h2>
+
 {% load static %}
 
 
 
 <a href="{% url 'blog:all_blogs' %}"><h1>Blog </h1></a>
-<a href="{% static 'portfolio\download - Copy.jfif' %}"><h4>Resume</h4></a>
+<a href="{% static 'portfolio/download - Copy.jfif' %}"><h4>Resume</h4></a>
 
 <br>
 
-<img src=" {% static 'portfolio\tree-736885__340.webp' %}" width=auto height=auto alt="My Image">
+<img src=" {% static 'portfolio/tree-736885__340.webp' %}" width=700px height=500px alt="My Image">
 
 
 
